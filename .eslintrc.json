@@ -1,3 +1,29 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript", "prettier"],
+  "rules": {
+    // 들여쓰기는 2칸으로 강제합니다.
+    "indent": ["error", 2],
+    // 문자열은 작은따옴표로 통일합니다.
+    "quotes": ["error", "single"],
+    // 세미콜론 사용을 강제합니다.
+    "semi": ["error", "always"],
+    // 사용하지 않는 변수가 있으면 경고를 표시합니다.
+    "no-unused-vars": "warn",
+    // console.log() 사용시 경고를 표시합니다.
+    "no-console": "warn",
+    // 선언되지 않은 변수 사용을 금지합니다.
+    "no-undef": "error",
+    // 중복된 import를 금지합니다.
+    "no-duplicate-imports": "error",
+    // 불필요한 공백을 제거합니다.
+    "no-trailing-spaces": "error",
+    // 함수 이름과 괄호 사이에 공백을 넣지 않습니다.
+    "func-call-spacing": ["error", "never"],
+    // 객체의 마지막 속성 뒤에 쉼표를 넣도록 합니다.
+    "comma-dangle": ["error", "always-multiline"],
+    // 화살표 함수의 파라미터가 하나일 때 괄호 생략을 강제합니다.
+    "arrow-parens": ["error", "as-needed"]
+  }
 }
+
+ 
